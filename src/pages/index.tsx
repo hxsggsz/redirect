@@ -33,7 +33,7 @@ export default function Home() {
       <form onSubmit={handleSubmit} className="w-[40vw] flex flex-col gap-3 max-md:w-[90vw]">
         <Input value={nome} onChange={(ev) => setNome(ev.currentTarget.value)} label="Nome" />
         <Input value={url} onChange={(ev) => setUrl(ev.currentTarget.value)} label="Link" />
-        <Button isActive={nome && url !== '' ? false : true || isMutating}>Enviar</Button>
+        <Button isActive={nome && url !== '' ? false : true || isMutating}>Criar</Button>
       </form>
 
       <section className=" flex flex-col gap-4 pt-12">
